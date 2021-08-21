@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>world</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylen25.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div  class="head">
+			<h1><center><i><b><font size=70 face ="verdana"> GetYourLinks</font></b></i></center></h1>
+			<ul>
+			    <li><a href="/"><b>Home</b></a></li>
+				<li><a href="/latest"><b>Latest</b></a></li>
+				<li><a href="/trending"><b>Trending</b></a></li>
+				<li><a href="/education"><b>Education</b></a></li>
+				<li><a href="/india"><b>India</b></a></li>	
+				<li><a href="/cities"><b>Cities</b></a></li>
+				<li><a href="/world"><b>World</b></a></li>
+				<li><a href="/sports"><b>Sports</b></a></li>
+				<li><a href="/entertainment"><b>Entertainment</b></a></li>	
+			</ul>
+		</div>
+		<div >
+			{% for i in range(l) %}
+			<div class="title">
+			<br>
+			<a><b>{{r2[i]}}</b></a>
+			<br>
+			<a href="{{r1[i]}}">{{r1[i]}}</a>
+			<br>
+	    	</div>
+	    	{% endfor %}
+		</div>
+	</header>
+</div>
+</body>
+</html>

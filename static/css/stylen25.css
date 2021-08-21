@@ -1,0 +1,45 @@
+#container{
+		margin:0px auto;
+
+}
+.head{
+	height: 120px;
+	background-color: #000;
+}
+.head ul{
+	list-style-type:none;
+	margin-top:1px;
+}
+.head ul li{
+	display:inline-block;
+}
+.head ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:7px 25px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+
+}
+.head ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.head h1 i b {
+	font-size: 80px;
+	text-shadow: 2px 2px 3px blue;
+	color: #fff;
+}
+div{
+	margin: 30px 50px;
+}
+.title{
+	border: 2px solid blue;
+ 	padding: 10px;
+ 	border-radius: 25px;
+ 	box-shadow: 8px 15px #b3c6ff;
+}
+
+.title a{
+	font-size: 150%;
+}

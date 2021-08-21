@@ -1,0 +1,48 @@
+<head>
+	<title>log in</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylen3.css')}}">
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="/"><b>Home</b></a></li>				
+				<li><a href="/signupn"><b>Sign up</b></a></li>
+				<li><a href="/loginn"><b>log in</b></a></li>
+				<li><a href="/logout"><b>log out</b></a></li>
+				<li><a href="/service"><b>Services</b></a></li>
+			</ul>
+		</div>
+		<div class="form">
+			<form action="/loginvalue" method="post">
+				<div class="container1">
+				    <h1>log in</h1>
+				    <hr>
+				   
+				    <label for="email"><b>Email</b></label>
+				    <input type="text" placeholder="Enter Email" name="email" required>
+
+				    <label for="password"><b>Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="password" required>
+				     
+				    
+                    <br>
+				    <div class="clearfix">
+				      <button type="button" class="cancelbtn">Cancel</button>
+				      <button type="submit" class="loginbtn" name="">Log in</button>
+				   
+				    </div>
+				    <p class="login"><b><font color="white">New User?</font>&nbsp &nbsp<a  style="color:dodgerblue" href="/signupn">Sign up</a></b></p>
+				  </div>
+			</form>
+		</div>
+		<div class="title">
+			<h1>GetYourLinks</h1>
+		</div>
+	
+	</header>
+</div>
+</body>
+</html>

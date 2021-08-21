@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title>search</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylen27.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div  class="head">
+			
+			<ul>
+			    <li><a href="/"><b>Home</b></a></li>
+				<li><a href="/latest"><b>Latest</b></a></li>
+				<li><a href="/trending"><b>Trending</b></a></li>
+				<li><a href="/education"><b>Education</b></a></li>
+				<li><a href="/india"><b>India</b></a></li>	
+				<li><a href="/cities"><b>Cities</b></a></li>
+				<li><a href="/world"><b>World</b></a></li>
+				<li><a href="/sports"><b>Sports</b></a></li>
+				<li><a href="/entertainment"><b>Entertainment</b></a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>GetYourLinks</h1>
+		</div>
+		<div class="search">
+			<form class="example" action="/result" method="post">
+  			<input type="text" placeholder="search..." name="search">
+ 			<button type="submit" ><i class="fa fa-search"></i></button>
+ 			</center>
+			</form>
+		</div>
+		</header>
+		<br>
+		<br>
+		<div class="col">
+			<a href="/latest">
+			<div class="card card1">
+
+				<h5></h5>
+			</div></a><a href="/trending"><div class="card card2">
+				<h5></h5>
+			</div></a><a href="/education"><div class="card card3">
+				<h5></h5>
+			</div></a><a href="/cities"><div class="card card4">
+				<h5></h5>
+			</div></a><a href="/india"><div class="card card5">
+				<h5></h5>
+			</div></a><a href="/world"><div class="card card6">
+				<h5></h5>
+			</div></a><a href="/entertainment"><div class="card card7">
+				<h5></h5>
+			</div></a>
+			<a href="/sports"><div class="card card8">
+				<h5></h5>
+			</div></a>
+			
+
+		</div>
+	
+</div>
+</body>
+</html>

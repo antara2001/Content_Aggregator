@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GetYourLinks</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylen12.css') }}">
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="/"><b>Home</b></a></li>
+				<li><a href="/latest"><b>Latest</b></a></li>
+				<li><a href="/trending"><b>Trending</b></a></li>
+				<li><a href="/education"><b>Education</b></a></li>
+				<li><a href="/india"><b>India</b></a></li>	
+				<li><a href="/cities"><b>Cities</b></a></li>
+				<li><a href="/world"><b>World</b></a></li>
+				<li><a href="/sports"><b>Sports</b></a></li>
+				<li><a href="/entertainment"><b>Entertainment</b></a></li>
+			</ul>
+		</div>
+		<hr color='white'>
+		<div class="title">
+			<h1>GetYourLinks</h1>
+		</div>
+		<div class="links">
+		{% for links in result %}
+		<div>
+			<a href="{{links}}">{{links}}</a>
+	    </div>
+	    {% endfor %}
+	</div>
+	</header>
+</div>
+</body>
+</html>

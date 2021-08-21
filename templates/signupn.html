@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>sign up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylen2.css')}}">
+</head>
+<body>
+	<div id="container">
+	<header>
+		<div class="main">
+			<ul>
+				<li><a href="/"><b>Home</b></a></li>				
+				<li><a href="/signupn"><b>Sign up</b></a></li>
+				<li><a href="/loginn"><b>log in</b></a></li>
+				<li><a href="/logout"><b>log out</b></a></li>
+				<li><a href="/service"><b>Services</b></a></li>
+			</ul>
+		</div>
+		<div class="form">
+			<form action="/signupvalue" method="post">
+				<div class="container1">
+				    <h1><font color="white">Sign Up</font></h1>
+				    <p><font color="white">Please fill in this form to create an account.</font></p>
+				    <hr>
+				    <label for="username"><font color="white"><b>Username</b></font></label>
+				    <input type="text" placeholder="Enter your name" name="username" required>
+
+				    <label for="email"><font color="white"><b>Email</b></font></label>
+				    <input type="text" placeholder="Enter Email" name="semail" required>
+
+				    <label for="psw"><font color="white"><b>Password</b></font></label>
+				    <input type="password" placeholder="Enter Password" name="spsw" required>
+				    
+				    <label>
+				      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><font color="white"> Remember me</font>
+				    </label>
+				    
+				    <p><font color="white">By creating an account you agree to our </font><a href="/service" style="color:dodgerblue"><b>Terms & Privacy</b></a>.</p>
+
+				    <div class="clearfix">
+				      <button type="button" class="cancelbtn">Cancel</button>
+				      <button type="submit" class="signupbtn">Sign Up</button>
+				    </div>
+				    <p class="login"><b>Already Resigtered User?&nbsp &nbsp<a  style="color:dodgerblue" href="/loginn">log in</a></b></p>
+				  </div>
+			</form>
+		</div>
+		<div class="title">
+			<h1>GetYourLinks</h1>
+		</div>
+	
+	</header>
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+*{
+    margin:0;
+	padding:0;
+	font-family:Century Gothic;
+}
+#container{
+		margin:0px auto;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../p9.jpg);
+	height:70vh;
+	background-size:cover;
+	background-position:center;
+	
+}
+ul{
+	float:right;
+	list-style-type:none;
+	margin-top:25px;
+}
+ul li{
+	display:inline-block;
+}
+ul li a{
+	text-decoration:none;
+	color:#fff;
+	padding:7px 25px;
+	border: 1px solid #fff;
+	transition: 0.6s ease;
+
+}
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+.title{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.title h1{
+	color:#fff;
+	font-size: 125px;
+	text-shadow: 3px 3px 5px blue;
+}
+.search{
+	position: absolute;
+	top:85%;
+	left:35%;
+	transform:translate(-50%,-50%);
+	border: 2px solid blue;
+ 	padding: 10px;
+ 	border-radius: 25px;
+ 	box-shadow: 8px 15px #b3c6ff;
+}
+.search h1{
+	color:#000;
+	font-size: 25px;
+	font-style: oblique;
+	text-shadow: 2px 2px  #b3c6ff;
+}
+
+.search{
+	display:inline-block;
+}
+.contact{
+	position: absolute;
+	top:86%;
+	left:85%;
+	transform:translate(-50%,-50%);
+	border: 2px solid blue;
+ 	padding: 10px;
+ 	border-radius: 25px;
+ 	box-shadow: 8px 15px #b3c6ff;
+}
+.contact h1{
+	color:#000;
+	font-size: 25px;
+	font-style: oblique;
+	
+}
+
+.contact{
+	display:inline-block;
+}
+@media screen and (min-width: 1800px)
+{
+	#container{
+		width:100%;
+		height:100%;
+	}
+	
+}
+
+@media screen and (max-width: 810px)
+{
+	#container{
+		width:180%;
+		height: 100%
+		display:block;
+	}
+	
+	ul li a{
+		display:block;
+		padding:2px 10px;
+		
+	}
+	
+}
+@media screen and (max-width: 510px)
+{
+	#container{
+		width:180%;
+		display:block;
+	}
+	ul li a{
+		display:block;
+		padding:1px 4px;
+
+	}
+	
+}
